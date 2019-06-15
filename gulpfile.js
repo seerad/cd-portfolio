@@ -9,7 +9,7 @@ var gulp = require("gulp"),
 var paths = {
     styles: {
         // By using styles/**/*.sass we're telling gulp to check all folders for any sass file
-        src: "src/scss/*.scss",
+        src: "src/scss/**/*.scss",
         // Compiled files will end up in whichever folder it's found in (partials are not compiled)
         dest: "src/css"
     }
@@ -52,7 +52,7 @@ function watch() {
     // We should tell gulp which files to watch to trigger the reload
     // This can be html or whatever you're using to develop your website
     // Note -- you can obviously add the path to the Paths object
-    gulp.watch("**/*.html", reload);
+    gulp.watch("./*.html", reload);
 }
 
 // Don't forget to expose the task!

@@ -1,0 +1,45 @@
+@media screen and (max-width:1200px){
+    .case-study{
+        margin: -60px 20px 40px; 
+    }
+    .intro{
+        padding: 50px 20px;
+    }
+}
+@media screen and (max-width:900px){
+    html{
+        font-size: 8px;
+    }
+    .intro, .case-study{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .intro{
+        h1{
+            br{
+                clear: none;
+            }
+        }
+    }
+    .case-study{ 
+        &__description{
+            background: linear-gradient(180deg, rgba(200,200,200,1) 0%, rgba(190,190,190,1) 80px, rgba(255,255,255,1) 80px);
+            margin-top: 0;
+            padding: 0;
+            &--rotate-90{
+                left:0;
+                top:0;
+                position: relative;
+                transform-origin: 0 0;
+                transform: rotate(0deg);
+                padding-left: 20px;
+                color:#ddd;
+                white-space: normal;
+                margin: 20px 0;
+                h2{
+                    font-size: 3rem;
+                    cursor: text; 
+                }
+            }
+        }
+    }
+}
