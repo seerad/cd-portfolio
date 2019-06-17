@@ -7,6 +7,7 @@
     <title>UX/UI Designer and Front-End Developer - Conrad Davenport</title> 
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700|Quattrocento:400,700&display=swap" rel="stylesheet">
     <link href="./src/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/c89ce59dda.js"></script>
 </head>
 <body>
     <header>
@@ -21,7 +22,9 @@
             <p>I’m Conrad Davenport, a creative problem solver acting as a UX/UI designer and front-end developer. I’m currently the Director of Web Design and Development at Advantage Internet Marketing. I’ve spent the last 12 years designing and developing over 250 websites. My focus is on understanding and empathizing the users’ needs. </p>
         </div>
     </div>
-    <div class="case-studies">
+    <div class="case-studies" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+        
+        <!-- Case Study Uno-->
         <div class="case-study">
             <div class="case-study__image" style="background-image:url(./src/images/immaculate-clean.png)">
                 <!-- Image loaded via in-line CSS style-->
@@ -31,19 +34,44 @@
                     <h2>CASE STUDY: Immaculate Clean</h2>
                 </div>
                 <div class="case-study__section">
-                    <h2>The Problem</h2>
+                    <h2><i class="fas fa-exclamation-triangle"></i> The Problem</h2>
                     <p>The client wanted a modern solution for their website that was more than just a brochure of services and re-enforced their existing branding.</p>
                 </div>   
                 <div class="case-study__section">
-                    <h2>The Solution</h2>
+                    <h2><i class="fas fa-check-circle"></i> The Solution</h2>
                     <p>We analyzed the user needs and what was most important to them. For this sevice industry, what people are purchasing isn't a clean house (typically), they're purchasing the freedom of not having to do it themselves providing them with more time to do what they love. After we established the user need, we looked at what sort of problems and issues/reservations the client may have in hiring a home cleaning company. Our above the fold messaging brought together the company's existing branding (enjoy the harmony) and combined this with the company's unique value propositions and trustbuilding statements... trusted, 1000s of happy customers, testimonials, etc.</p>
                 </div>
                 <div class="case-study__section">
-                    <h2>The Process</h2>
+                    <h2><i class="fas fa-chart-line"></i> The Process</h2>
                     <p>I began with handdrawn wireframes to analyze the overall User Experience Design and how we could best present the solution to the user and lead them through the process of signing up for an estimate. During this stage, the initial idea for utilizing motion on images to re-enforce the idea of making memories was developed. These wireframes were taken into Photoshop to create high-fidelity mockups of the mobile and desktop versions as well as an interior page layout. Because of the strong SEO and AdWords strategy, the interior pages were created to function as individual landing pages presenting their core messaging for users. These high-fidelity mockups were taken and implemented into a custom Wordpress theme using Foundation for the framework.</p>
                 </div>
             </div>
         </div>
+
+        <!-- Case Study Dos-->
+        <div class="case-study">
+            <div class="case-study__image" style="background-image:url(./src/images/mighty-auto-pro.jpg)">
+                <!-- Image loaded via in-line CSS style-->
+            </div>
+            <div class="case-study__description">
+                <div class="case-study__description--rotate-90">
+                    <h2>CASE STUDY: Mighty Auto Pro</h2>
+                </div>
+                <div class="case-study__section">
+                    <h2><i class="fas fa-exclamation-triangle"></i> The Problem</h2>
+                    <p>The client wanted a modern solution for their website that was more than just a brochure of services and re-enforced their existing branding.</p>
+                </div>   
+                <div class="case-study__section">
+                    <h2><i class="fas fa-check-circle"></i> The Solution</h2>
+                    <p>We analyzed the user needs and what was most important to them. For this sevice industry, what people are purchasing isn't a clean house (typically), they're purchasing the freedom of not having to do it themselves providing them with more time to do what they love. After we established the user need, we looked at what sort of problems and issues/reservations the client may have in hiring a home cleaning company. Our above the fold messaging brought together the company's existing branding (enjoy the harmony) and combined this with the company's unique value propositions and trustbuilding statements... trusted, 1000s of happy customers, testimonials, etc.</p>
+                </div>
+                <div class="case-study__section">
+                    <h2><i class="fas fa-chart-line"></i> The Process</h2>
+                    <p>I began with handdrawn wireframes to analyze the overall User Experience Design and how we could best present the solution to the user and lead them through the process of signing up for an estimate. During this stage, the initial idea for utilizing motion on images to re-enforce the idea of making memories was developed. These wireframes were taken into Photoshop to create high-fidelity mockups of the mobile and desktop versions as well as an interior page layout. Because of the strong SEO and AdWords strategy, the interior pages were created to function as individual landing pages presenting their core messaging for users. These high-fidelity mockups were taken and implemented into a custom Wordpress theme using Foundation for the framework.</p>
+                </div>
+            </div>
+        </div>
+
     </div>
     <div class="proficiencies">
             <h2>Some of my favorite tools</h2>
@@ -76,5 +104,6 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./src/js/custom.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>

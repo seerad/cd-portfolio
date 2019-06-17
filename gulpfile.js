@@ -17,15 +17,15 @@ var paths = {
 
 function style() {
     return gulp
-        .src(paths.styles.src)
+        .src('src/scss/style.scss')
         // Initialize sourcemaps before compilation starts
-        .pipe(sourcemaps.init())
+        // .pipe(sourcemaps.init())
         .pipe(sass())
         .on("error", sass.logError)
         // Use postcss with autoprefixer and compress the compiled file using cssnano
         .pipe(postcss([autoprefixer(), cssnano()]))
         // Now add/write the sourcemaps
-        .pipe(sourcemaps.write())
+        // .pipe(sourcemaps.write())
         .pipe(gulp.dest(paths.styles.dest))
         // Add browsersync stream pipe after compilation
         .pipe(browserSync.stream());

@@ -1,8 +1,12 @@
 $(document).ready(function() {
+    //call slick slider
+    $('.case-studies').slick();
+
+    //styling for custom accordion
     //use jquery to set initial display none for accessibility if no JS
     $('.case-study__section p').css('display', 'none');
-    $('.case-study__section').first().addClass('active');
-    $('.case-study__section').first().find('p').slideToggle();
+    $('.case-study__section:first-child').addClass('active');
+    $('.case-study__section:first-child').find('p').slideToggle();
     //create click function for accordion
     $('.case-study__section h2').on('click', function() {
       //check if accordion-item is already active
