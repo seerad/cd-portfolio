@@ -4,9 +4,11 @@ $(document).ready(function() {
 
     //styling for custom accordion
     //use jquery to set initial display none for accessibility if no JS
-    $('.case-study__section p').css('display', 'none');
-    $('.case-study__section:first-child').addClass('active');
-    $('.case-study__section:first-child').find('p').slideToggle();
+    $('.case-study__section').not('.default').find('p').css('display', 'none');
+    $('.default').addClass('active');
+
+    // $('.case-study__section:first-of-type').addClass('active');
+    // $('.case-study__section:first-child p').slideToggle();
     //create click function for accordion
     $('.case-study__section h2').on('click', function() {
       //check if accordion-item is already active
