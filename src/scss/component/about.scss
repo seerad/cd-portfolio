@@ -1,0 +1,14 @@
+.about{
+    background: $bright;
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 60px;
+    padding: 50px 100px;    
+    @extend %box-shadow;
+    &__what-i-do{
+        grid-gap:20px;
+        align-items: center;
+        grid-column: span 3;
+    }
+}
