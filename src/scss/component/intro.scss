@@ -8,12 +8,13 @@
     color:#fff;
     border-bottom: 110px solid $dim;
     @extend %box-shadow;
+    align-items: center;
     &__logo{
         grid-column: span 2;
+        display: grid;
         h1{
             color:rgba(255,255,255,.2);
             font-size: 100px;
-            margin-bottom: -30px;
             line-height: 1;
         }
     }

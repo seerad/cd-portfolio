@@ -19,9 +19,9 @@ $(document).ready(function() {
         //do nothing already active
       } else {
         // close any active accordion items
-        $('.active').find('p').slideToggle();
+        $(this).parent().siblings('.active').find('p').slideToggle();
         //remove class active from active after closing
-        $('.active').toggleClass('active');
+        $(this).parent().siblings('.active').toggleClass('active');
         //add class active to accordion-item for styling
         $(this).parent().addClass('active');
         //slide accordion open

@@ -20,18 +20,22 @@
             }
         }
     }
+    .slick-list{
+        padding-bottom: 0;
+    }
     .case-study{ 
+        margin-top: 0;
         &__description{
-            background: linear-gradient(180deg, rgba(200,200,200,1) 0%, rgba(190,190,190,1) 80px, rgba(255,255,255,1) 80px);
-            margin-top: 0;
-            padding: 0;
+            background: linear-gradient(180deg, $dim 0%, $dim 80px, #f2f1e6 80px);
+            margin: 0;
+            padding: 0 0 40px 15px;
             &--rotate-90{
                 left:0;
                 top:0;
                 position: relative;
                 transform-origin: 0 0;
                 transform: rotate(0deg);
-                padding-left: 20px;
+                padding: 0;
                 color:#ddd;
                 white-space: normal;
                 margin: 20px 0;
@@ -40,6 +44,22 @@
                     cursor: text; 
                 }
             }
+        }
+    }
+    .proficiencies{
+        padding: 30px;
+        &__expert{
+            grid-column: span 5;
+            margin-bottom: 40px;
+        }
+        &__recent{
+            grid-column: span 5;
+        }
+    }
+    .about{
+        padding: 40px 20px;
+        &__what-i-do{
+            grid-column:span 5;
         }
     }
 }
