@@ -1,9 +1,6 @@
 $(document).ready(function() {
     //call slick slider
-    $('.case-studies').slick({
-        nextArrow: '.next_caro',
-        prevArrow: '.previous_caro'
-    });
+    $('.case-studies').slick();
 
     //styling for custom accordion
     //use jquery to set initial display none for accessibility if no JS

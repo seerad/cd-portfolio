@@ -6,6 +6,7 @@ $dim: #2B7A78;
 $faded-dark: #17252A;
 $dark: #0B0C10;
 $neutral: #DEF2F1;
+$neutralYellow: #f2f1e6;
 %box-shadow{
     box-shadow: 0 0 45px 5px rgba(0,0,0,.2); 
 }
@@ -40,6 +41,7 @@ p{
 @import 'component/case-study';
 @import 'component/proficiencies';
 @import 'component/about';
+@import 'component/copyright';
 
 
 //Trumps________________

@@ -117,6 +117,39 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+// button.slick-arrow{
+//     display: none !important; 
+// }
 button.slick-arrow{
-    display: none !important; 
+    font-size:0;
+    border:none;
 }
+// .slick-next:before { 
+//     content: ">"; 
+//     color: red; 
+//     font-size: 30px; 
+// } 
+// .slick-prev:before { 
+//     content: "<"; 
+//     color: red; 
+//     font-size: 30px; 
+// }
+.slick-next, .slick-prev {
+	width: 46px;
+	height: 100px; 
+    position: absolute;
+    background: url(../images/slider-arrow.png) no-repeat left center;
+    left:10px;
+    top:40%;
+    cursor:pointer;
+    transition: opacity 1s;
+    z-index:10;
+    &:hover{
+        opacity:.5;
+    }
+}
+.slick-next{
+      transform: rotate(180deg);
+      right:10px;
+      left:auto;
+  }

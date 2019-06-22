@@ -60,6 +60,11 @@
         padding: 40px 20px;
         &__what-i-do{
             grid-column:span 5;
+            order: 1;
+        }
+        &__contact{
+            grid-column:span 5;
+            order: 2;
         }
     }
 }

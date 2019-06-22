@@ -4,7 +4,7 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
     grid-column-gap: 60px;
-    padding: 50px 100px;    
+    padding: 80px 100px;    
     @extend %box-shadow;
     h2{
         font-size: 36px;
@@ -20,10 +20,26 @@
         align-items: center;
         grid-column: span 3;
     }
-    .copyright{
-        font-size: 14px;
-        margin-top: 25px;
-        color: rgba(255,255,255,.3);
-        text-align: center;
+    &__contact{
+        grid-column: span 2;
+        background: $neutralYellow;
+        padding: 30px;
+        font-family: $font-heading;
+        h2{
+            color: $dark;
+        }
+        h3{
+            font-size: 18px;
+        }
+        p{
+            text-transform: uppercase;
+            font-size: 24px;
+            margin-top: 25px;
+            color: rgba(0,0,0,.2);
+            a{
+                text-decoration: none;
+                color: $dim;
+            }
+        }
     }
 }
