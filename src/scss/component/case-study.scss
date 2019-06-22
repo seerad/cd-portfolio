@@ -50,15 +50,17 @@
                     content: "\f067";
                     font-family: "Font Awesome 5 Free";
                     font-style: normal;
-                    font-weight: normal;
                     text-decoration: inherit;
+                    font-weight: 900;
+                    font-variant: normal;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
                     /*--adjust as necessary--*/
                     font-size: 18px;
                     padding-right: 0.5em;
                     position: absolute;
                     top: 20px;
                     right: 5px;
-                    font-weight:900;
                     color: rgba(0,0,0,.2);
                 }
                 &:hover{
