@@ -11,7 +11,7 @@
 <body>
     <!--Hello, hello! Thanks for taking a look at my code. 
         This site was created without any frameworks using a combination of SASS, CSS Grid, HTML5, JS, and custom jQuery. 
-        This is in-line with the direction I'm hoping to continue progressing in rather than relying on frameworks like Bootstrap and Foundation.
+        This is in-line with the direction I'm hoping to continue progressing in rather than relying on frameworks like Bootstrap and Foundation, however, I have years of experience with these as well.
         My goal is to continue growing and expanding my repertoire of development abilities.
         I'm currently working on learning React and deepening my understanding of JS.
         github for this project can be found at: https://github.com/seerad/cd-portfolio.git -->
@@ -24,7 +24,35 @@
             <p>I’m Conrad Davenport, a <strong>creative problem solver</strong> working as a UX/UI designer and front-end developer. I’m currently the Director of Web Design and Development at Advantage Internet Marketing. I’ve spent the last 12 years leading the design and development of over 300 websites. <strong>My focus is on understanding and empathizing the users’ needs.</strong> </p>
         </div>
     </div>
+    
     <div class="case-studies" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+
+        <div class="case-study">
+            <div class="case-study__image" style="background-image:url(./src/images/ccc-ux-ui.jpg)">
+                <a href="http://bit.ly/ccc-prototype" target="_blank">View Interactive Prototype</a>
+            </div>
+            <div class="case-study__description">
+                <div class="case-study__description--rotate-90">
+                    <h2>CASE STUDY: CigarClub.com</h2>
+                </div>
+                <div class="case-study__section default">
+                    <h2><i class="fas fa-exclamation-triangle"></i> The Problem</h2>
+                    <p>This project involved taking an existing brand and product and putting together a user experience that would help users to signup via an app.</p>
+                </div>   
+                <div class="case-study__section">
+                    <h2><i class="fas fa-check-circle"></i> The Solution</h2>
+                    <p>It was important to maintain the tone of their product and brand that carries through all of their marketing. I wanted to provide an experience not just for signup, but also a way to access your account and review your cigars from your latest box. I implemented a solution in the prototype as the user went through the taste test that allowed them to make their selection and then change it (if they wanted to) before moving to the next question. The goal was to allow the user to be confident before moving to the next question.</p>
+                </div>
+                <div class="case-study__section">
+                    <h2><i class="fas fa-user-check"></i> The Testing</h2>
+                    <p>Early in the user testing it became apparent that users were stumbling a little bit through the questionnaire. In feedback, I learned that they prefer moving to the next question immediately upon answering versus requiring a double tap to progress. I removed this from the prototype and had the user proceed on initial tap. This still left the problem of accidentally choosing the wrong option. To solve this user problem, a back button was added to easily go back and re-select their option, while still only requiring a single interaction from the user.</p>
+                </div>
+                <div class="case-study__section">
+                    <h2><i class="fas fa-chart-line"></i> The Process</h2>
+                    <p>I began by creating a base wireframe for the initial screen and the questionnaire in Adobe XD. After working through this and prototyping a few basic screens in the wireframe, I moved onto a high-fidelity mockup in XD, pulling in their branding and materials, as well as building out the additional screens needed for the prototype. I used XD's prototyping tools to create my connections and animate to present my UX/UI. I continued upon completion to design account screens detailing recent boxes, cigars, and access to the cigar journal. I used Photoshop to put together an initial screen to serve as a landing screen while the app started.</p>
+                </div>
+            </div>
+        </div> 
         
         <div class="case-study">
                 <!-- Case Study Uno-->
@@ -177,7 +205,7 @@
     <script src="https://kit.fontawesome.com/c89ce59dda.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./src/js/custom.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15593691-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
