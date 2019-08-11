@@ -6,23 +6,40 @@
     background-image: linear-gradient(167deg, $bright, $bright);
     padding: 50px 100px;
     color:#fff;
-    border-bottom: 110px solid $dim;
+    border-bottom: 12px solid $dim;
     @extend %box-shadow;
     align-items: center;
     &__logo{
         grid-column: span 2;
         display: grid;
+        border-right: solid 1px #5fcdc7;
         h1{
-            color:rgba(255,255,255,.2);
-            font-size: 100px;
+            color: $dark-teal;
+            font-size: 5.5vw;
             line-height: 1;
+            font-weight: 300;
+        }
+        h2{
+            font-size: 2.2vw;
+            font-family: $font-body;
+            font-weight: bold;
+            color:#a6ffff;
+            letter-spacing: 3.5px;
         }
     }
     &__content{
         grid-column: span 2;
         p{
-            padding-left: 30px;
-            font-size: 2rem;
+            padding-left: 70px;
+            font-size: 1.7vw;
+            font-weight: 300;
+            color:#a6ffff;
         }
     }
+    // .divider{
+    //     position:absolute;
+    //     left:50%;
+    //     top:10%;
+    //     bottom:10%;
+    // }
 }

@@ -1,12 +1,13 @@
 //Settings_______________
-$font-body: 'Quattrocento', serif;
-$font-heading: 'Oswald', sans-serif;
+$font-body: 'Open Sans', sans-serif;
+$font-heading: 'Open Sans Condensed', sans-serif;
 $bright: #3AAFA9;
 $dim: #2B7A78;
+$dark-teal: #004242;
 $faded-dark: #17252A;
-$dark: #0B0C10;
-$neutral: #DEF2F1;
-$neutralYellow: #f2f1e6;
+$dark: #8a8182;
+$neutral: #fdfbfb;
+$neutralYellow: #fdfbfb;
 %box-shadow{
     box-shadow: 0 0 45px 5px rgba(0,0,0,.2); 
 }
@@ -33,11 +34,13 @@ p{
     margin: 0;
     padding: 0;
     font-size: 16px;
+    color: rgba(0,0,0,.8);
 }
 
 //Components____________
 @import 'component/slider';
 @import 'component/intro';
+@import 'component/overview';
 @import 'component/case-study';
 @import 'component/proficiencies';
 @import 'component/about';
