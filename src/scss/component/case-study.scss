@@ -25,24 +25,10 @@
         background-size: 100% auto;
         transition:background-position 2s ease;
         margin: 0 0 40px;
-        position: relative; 
         @extend %box-shadow;
         &:hover{
             background-position: bottom center;
             transition:background-position 8s ease;
-        }
-        a{
-            display: block;
-            text-align: center;
-            position: absolute;
-            bottom:0;
-            width: 100%;
-            margin-bottom:-40px;
-            font-size: 24px;
-            color:#fff;
-            &:hover{
-                color:#ccc;
-            }
         }
     }
     &__description{
@@ -64,17 +50,15 @@
                     content: "\f067";
                     font-family: "Font Awesome 5 Free";
                     font-style: normal;
+                    font-weight: normal;
                     text-decoration: inherit;
-                    font-weight: 900;
-                    font-variant: normal;
-                    text-rendering: auto;
-                    -webkit-font-smoothing: antialiased;
                     /*--adjust as necessary--*/
                     font-size: 18px;
                     padding-right: 0.5em;
                     position: absolute;
                     top: 20px;
                     right: 5px;
+                    font-weight:900;
                     color: rgba(0,0,0,.2);
                 }
                 &:hover{
