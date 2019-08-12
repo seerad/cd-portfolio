@@ -2,15 +2,21 @@
     .case-study{
         margin: -60px 20px 40px; 
     }
-    .intro{
+    .intro, .overview, .branding{
         padding: 50px 20px;
+        .slick-prev{
+            margin-left: -20px;
+        }
+        .slick-next{
+            margin-right: -20px;
+        }
     }
 }
 @media screen and (max-width:900px){
     html{
         font-size: 8px;
     }
-    .intro, .case-study{
+     .case-study{
         grid-template-columns: repeat(2, 1fr);
     }
     .intro{
@@ -26,22 +32,13 @@
     .case-study{ 
         margin-top: 0;
         &__description{
-            background: linear-gradient(180deg, $dim 0%, $dim 80px, #f2f1e6 80px);
-            margin: 0;
-            padding: 0 0 40px 15px;
+            margin: 30px 0 0 0;
+            padding: 0 0 40px 0;
             &--rotate-90{
-                left:0;
-                top:0;
-                position: relative;
-                transform-origin: 0 0;
-                transform: rotate(0deg);
+                margin: -54px 0 0;
                 padding: 0;
-                color:#ddd;
-                white-space: normal;
-                margin: 20px 0;
                 h2{
                     font-size: 3rem;
-                    cursor: text; 
                 }
             }
         }
@@ -65,6 +62,62 @@
         &__contact{
             grid-column:span 5;
             order: 2;
+        }
+    }
+}
+@media screen and (max-width:700px){
+    .intro, .overview{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .intro{
+        &__logo{
+            border-right: none;
+            border-bottom: solid 1px #5fcdc7;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            h1{
+                font-size: 11vw;
+                font-weight: 300;
+            }
+            h2{
+                font-size: 4.4vw;
+            }
+        }
+        &__content{
+            p{
+                padding-left: 0;
+                font-size: 3.5vw;
+            }
+        }
+    }
+}
+@media screen and (max-width:500px){
+    .overview{
+        h2{
+            font-size: 3rem;
+            font-weight: bold;
+            padding-bottom: 0;
+        }
+        .edu__session{
+            border-left: 2px solid #dbd9d8;
+            color: #b1a8aa;
+            font-weight: 300;
+            padding: 3px 0 8px 10px;
+        }
+        h3,h4,h5{
+            font-size: 1.4rem;
+            font-family: $font-body;
+            font-weight: normal;
+        }
+        ul{
+            list-style:none;
+            border-left: 2px solid #dbd9d8;
+            font-size: 1.7rem;
+            color: #b1a8aa;
+            font-weight: 300;
+            padding-left: 10px;
+            margin-top: 0;
+            line-height: 1.9;
         }
     }
 }

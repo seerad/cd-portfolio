@@ -1,0 +1,29 @@
+.branding{
+    padding: 80px 100px 50px;
+    background: #fff;
+    h2{
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 4rem;
+        color: #8a8182;
+    }
+    img{
+        display: block;
+        height: auto;
+        margin: 0 20px;
+        border-radius: 20px;
+    }
+    .slick-list{
+        padding-top: 0;
+    }
+    .slick-next, .slick-prev {
+        background: url(../images/slider-arrow-dark.png) no-repeat 0;
+        top:25%;
+    }
+    .slick-prev{
+        margin-left: -100px;
+    }
+    .slick-next{
+        margin-right: -100px;
+    }
+}

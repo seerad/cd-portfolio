@@ -1,6 +1,27 @@
 $(document).ready(function() {
     //call slick slider
     $('.case-studies').slick();
+    $('.branding-slider').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1023,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
 
     //styling for custom accordion
     //use jquery to set initial display none for accessibility if no JS

@@ -40,6 +40,7 @@
         // padding: 20px 40px 20px 90px;
         padding: 20px;
         @extend %box-shadow;
+        border-radius: 10px;
         .case-study__section{
             h2{
                 cursor: pointer;
